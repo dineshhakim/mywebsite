@@ -14,7 +14,11 @@ uraApp.config(function ($routeProvider) {
             templateUrl: 'pages/home.html',
             controller: 'mainController'
         })
-
+        .when('/home', {
+            title: "Home",
+            templateUrl: 'pages/home.html',
+            controller: 'mainController'
+        })
         // route for the about page
         .when('/about', {
             title: "About",

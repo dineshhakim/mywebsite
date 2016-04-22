@@ -7,41 +7,70 @@
     <!-- load bootstrap and fontawesome via CDN -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/grayscale.css" />
 
     <!-- SPELLS -->
     <!-- load angular and angular route via CDN -->
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.js"></script>
-  <script src="js/angular-sanitize.min.js"></script>
+    <script src="js/angular-sanitize.min.js"></script>
     <script src="script.js"></script>
-      <script src="js/dataservice.js"></script>
+    <script src="js/dataservice.js"></script>
     <title ng-bind="'Dinesh- ' + title">myApp</title>
 </head>
 
-<body ng-controller="mainController">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="mainController">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Dinesh</span> Hakim
+                </a>
+            </div>
 
-    <!-- HEADER AND NAVBAR -->
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/">Dinesh Hakim</a>
-                </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
-                    <li><a href="#experience"><i class="fa fa-signal"></i> Experience</a></li>
-                    <li><a href="#education"><i class="fa  fa-trophy"></i> Education</a></li>
-                    <li><a href="#Projects"><i class="fa fa-tasks"></i> Projects</a></li>
-                    
+                      <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li><a href="#home"><i class="page-scroll fa fa-home"></i> Home</a></li>
+                   <li><a href="#experience"><i class="page-scroll fa fa-signal"></i> Experience</a></li>
+                    <li><a href="#education"><i class="page-scroll fa  fa-trophy"></i> Education</a></li>
+                    <li><a href="#Projects"><i class="page-scroll fa fa-tasks"></i> Projects</a></li>
+
+                    <li><a href="#contact"><i class="page-scroll fa fa-comment"></i> Contact</a></li>
+                   
                 </ul>
             </div>
-        </nav>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- HEADER AND NAVBAR -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Dinesh Karn</h1>
+                        <h3>.Net Full stack Developer</h1>
+                        <p class="intro-text">Developer with 5+ years of Experience</p>
+                        <a href="#home" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- MAIN CONTENT AND INJECTED VIEWS -->
-    <div id="main">
+    <div id="home">
 
         <!-- angular templating -->
         <!-- this is where content will be injected -->
