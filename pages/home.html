@@ -1,6 +1,17 @@
 <!-- home.html -->
-    <div class="jumbotron text-center">
-        <h1>Home Page</h1>
+<div class="jumbotron text-center">
+    <h2>About Me</h2>
+    <style type="text/css">
+        .preformatted {
+            white-space: pre;
+            display: block;
+            unicode-bidi: embed;
+            text-align: left;
+            margin-left: 10%;
+        }
+    </style>
 
-        <p>{{ message }}</p>
-    </div>
+    <p class="preformatted" ng-bind-html="message">
+    </p>
+
+</div>
