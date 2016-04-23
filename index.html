@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/grayscale.css" />
 
-    <!-- SPELLS -->
-    <!-- load angular and angular route via CDN -->
+
+
+    <script src="js/jquery.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.js"></script>
     <script src="js/angular-sanitize.min.js"></script>
     <script src="script.js"></script>
     <script src="js/dataservice.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/grayscale.js"></script>
     <title ng-bind="'Dinesh- ' + title">myApp</title>
 </head>
 
@@ -35,16 +38,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                      <li class="hidden">
+                    <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li><a href="#home"><i class="page-scroll fa fa-home"></i> Home</a></li>
-                   <li><a href="#experience"><i class="page-scroll fa fa-signal"></i> Experience</a></li>
-                    <li><a href="#education"><i class="page-scroll fa  fa-trophy"></i> Education</a></li>
-                    <li><a href="#Projects"><i class="page-scroll fa fa-tasks"></i> Projects</a></li>
+                    <li><a href="#home" target="_self"><i class="page-scroll fa fa-home"></i> Home</a></li>
+                    <li><a href="#experience" target="_self"><i class="page-scroll fa fa-signal"></i> Experience</a></li>
+                    <li><a href="#education" target="_self"><i class="page-scroll fa  fa-trophy"></i> Education</a></li>
+                    <li><a href="#Projects" target="_self"><i class="page-scroll fa fa-tasks"></i> Projects</a></li>
+                    <li><a href="#contact" target="_self"><i class="page-scroll fa fa-comment"></i> Contact</a></li>
 
-                    <li><a href="#contact"><i class="page-scroll fa fa-comment"></i> Contact</a></li>
-                   
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -60,7 +62,7 @@
                         <h1 class="brand-heading">Dinesh Karn</h1>
                         <h3>.Net Full stack Developer</h1>
                         <p class="intro-text">Developer with 5+ years of Experience</p>
-                        <a href="#home" class="btn btn-circle page-scroll">
+                        <a href="#home" target="_self" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -70,7 +72,7 @@
     </header>
 
     <!-- MAIN CONTENT AND INJECTED VIEWS -->
-    <div id="home">
+    <div id="main">
 
         <!-- angular templating -->
         <!-- this is where content will be injected -->
