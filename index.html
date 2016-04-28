@@ -19,6 +19,7 @@
     <script src="js/dataservice.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/grayscale.js"></script>
+    
     <title ng-bind="'Dinesh- ' + title">myApp</title>
 </head>
 
@@ -59,12 +60,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Dinesh Karn</h1>
+                        <!--<h1 class="brand-heading">Dinesh Karn</h1>
                         <h3>.Net Full stack Developer</h1>
                         <p class="intro-text">Developer with 5+ years of Experience</p>
                         <a href="#home" target="_self" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                        </a>-->
+                         <div ng-view></div>
                     </div>
                 </div>
             </div>
@@ -76,7 +78,7 @@
 
         <!-- angular templating -->
         <!-- this is where content will be injected -->
-        <div ng-view></div>
+        <!--<div ng-view></div>-->
     </div>
 
 </body>
