@@ -1,0 +1,56 @@
+<!--close container-->
+<section id="home" class="cd-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-content about">
+                    <h1> WHO I AM </h1>
+                    <div class="col-md-4">
+                        <div class="box-text">
+                            <h2>HISTORY</h2>
+                            <style type="text/css">
+                                .preformatted {
+                                    display: block;
+                                    unicode-bidi: embed;
+                                    text-align: justify;
+                                }
+                            </style>
+                            <p class="preformatted" ng-bind-html="data.description">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box-text">
+                           
+                                <img src="img/IMG_2.jpg" alt="">
+                           
+
+                            <h2>WHAT I DO</h2>
+                            <ul>
+                                <li ng-repeat="d in data.whatIDo">
+                                    {{d.name}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="box-text">
+                            <h2>Personal data</h2>
+                            <p>Date of birth: <span ng-bind="data.dob"></span></p>
+                            <p>Phone: <span ng-bind="data.phone"></span></p>
+                            <p>E-mail: <span ng-bind="data.email"></span></p>
+                            <h2>Education</h2>
+                            <p ng-bind="data.education.name"></p>
+                            <p ng-bind="data.education.fieldOfStudy"></p>
+                            <p ng-bind="data.education.years"></p>
+                        </div>
+                    </div>
+                </div>
+                <!--close box content-->
+            </div>
+        </div>
+        <!--close row-->
+    </div>
+
+</section>

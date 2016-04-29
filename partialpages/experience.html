@@ -1,0 +1,61 @@
+<section id="experience" class="cd-section" ng-controller="experienceController">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-content">
+                    <h1>Experiences</h1>
+                    <div class="col-md-6">
+                        <div class="box-text">
+                            <h2>WHAT I KNOW</h2>
+                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Prae sent
+                                non sem eu mi malesuada viverra volutpat ut libero. Nullam a venenatis tellus. Nam fen convallis
+                                tristique. In imperdiet est sed aliquet imperdiet.
+                            </p>
+                            <p class="slogan">" Creativity requires the courage to let go of certainties "</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skills-area triggerAnimation animated" data-animate="fadeInLeft">
+                            <div class="box-text">
+                                <h2>MY Skills</h2>
+                                <div class="skills-box">
+                                    <div class="skills-progress">
+                                        <p>Develope<span>87%</span></p>
+                                        <div class="meter nostrips develope">
+                                            <p style="width: 425px;"></p>
+                                        </div>
+                                        <p>Design<span>95%</span></p>
+                                        <div class="meter nostrips design">
+                                            <p style="width: 464px;"></p>
+                                        </div>
+                                        <p>Branding<span>98%</span></p>
+                                        <div class="meter nostrips branding">
+                                            <p style="width: 478px;"></p>
+                                        </div>
+                                        <p>Web applications<span>65%</span></p>
+                                        <div class="meter nostrips web-applications">
+                                            <p style="width: 317px;"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-content experiences">
+                    <div class="col-md-12 list-experiences" ng-repeat="item in experiences">
+                        <h2><i class="fa fa-briefcase"></i>{{item.position}}-{{item.name}}
+    <span class="data">{{item.years}}</span></h2>
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

@@ -1,73 +1,16 @@
 <!DOCTYPE html>
-<html class="csstransforms no-csstransforms3d csstransitions">
+<html class="csstransforms no-csstransforms3d csstransitions" ng-app="uraApp">
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <style type="text/css">
-        .gm-style .gm-style-mtc label,
-        .gm-style .gm-style-mtc div {
-            font-weight: 400
-        }
-    </style>
-    <style type="text/css">
-        .gm-style-pbc {
-            transition: opacity ease-in-out;
-            background-color: black;
-            text-align: center
-        }
-        
-        .gm-style-pbt {
-            font-size: 22px;
-            color: white;
-            font-family: Roboto, Arial, sans-serif;
-            position: relative;
-            margin: 0;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%)
-        }
-    </style>
+
     <link href="css/css_003.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        .gm-style .gm-style-cc span,
-        .gm-style .gm-style-cc a,
-        .gm-style .gm-style-mtc div {
-            font-size: 10px
-        }
-    </style>
-    <style type="text/css">
-        @media print {
-            .gm-style .gmnoprint,
-            .gmnoprint {
-                display: none
-            }
-        }
-        
-        @media screen {
-            .gm-style .gmnoscreen,
-            .gmnoscreen {
-                display: none
-            }
-        }
-    </style>
-    <style type="text/css">
-        .gm-style {
-            font-family: Roboto, Arial, sans-serif;
-            font-size: 11px;
-            font-weight: 400;
-            text-decoration: none
-        }
-        
-        .gm-style img {
-            max-width: none
-        }
-    </style>
-    <title>miniMe</title>
+
+    <title ng-bind="'Dinesh Karn- ' + title"></title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta charset="utf-8">
-    <meta name="author" content="Alessio Corsini">
+    <meta name="author" content="Dinesh Karn">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -80,7 +23,8 @@
     <link href="css/owl_002.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">    
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    
 </head>
 
 <body>
@@ -91,532 +35,39 @@
         <div id="top" class="container">
             <div class="row">
                 <nav class="col-md-12">
-                    <div class="col-md-3 col-sm-3 logo-content">
-                        <!--<img src="img/main/logo_mini.jpg" alt="">-->
-                        <span><h1>Dinesh Karn</h1></span>
+                    <div class="col-md-4 col-sm-4 logo">
+                        <span class="symbol"></span>
+                        <h1 class="title">
+                            <a>Dinesh Karn</a>
+                        </h1>
                     </div>
                     <div class="mini-menu"><i class="fa fa-bars"></i></div>
-                    <ul class="col-md-9 col-sm-9 menu">
-                        <li class="cl-effect-11"><a class="active" data-hover="HOME" href="#section1">Home</a></li>
-                        <li class="cl-effect-11"><a class="" data-hover="WORK" href="#section2">Work</a></li>
-                        <li class="cl-effect-11"><a class="" data-hover="EXPERIENCES" href="#section3">Experiences</a></li>
-                        <li class="cl-effect-11"><a class="" data-hover="BLOG" href="#section_blog">Blog</a></li>
-                        <li class="cl-effect-11"><a class="" data-hover="CONTACT" href="#section4">Contact</a></li>
+                    <ul class="col-md-8 col-sm-8 menu">
+                        <li class="cl-effect-11"><a class="active" target="_self" data-hover="HOME" href="#home">Home</a></li>
+                        <li class="cl-effect-11"><a class="" target="_self" data-hover="WORK" href="#work">Work</a></li>
+                        <li class="cl-effect-11"><a class="" target="_self" data-hover="EXPERIENCES" href="#experience">Experiences</a></li>
+                        <li class="cl-effect-11"><a class="" target="_self" data-hover="BLOG" href="#blog">Blog</a></li>
+                        <li class="cl-effect-11"><a class="" target="_self" data-hover="CONTACT" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <section id="section1" class="cd-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-content about">
-                        <h1> WHO I AM </h1>
-                        <div class="col-md-4">
-                            <div class="box-text">
-                                <h2>HISTORY</h2>
-                                <p>miniMe restore client-focused potentialities rather than functional strategic theme areas.
-                                    Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
-                                    sed nisi eleifend, lorem fermentum orci sit amet, iaculis libero.</p>
-                                <p>miniMe restore client-focused potentialities rather than functional strategic theme areas.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box-img">
-                                <img src="img/main/office.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box-text">
-                                <h2>Personal data</h2>
-                                <p>Date of birth: 05/11/1980</p>
-                                <p>Phone: +12-345-6789</p>
-                                <p>E-mail: info@minime.com</p>
-                                <h2>Education</h2>
-                                <p>Academy of Art University</p>
-                                <p>IT Technical Institute</p>
-                                <p>Web Design School</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--close box content-->
-                </div>
-            </div>
-            <!--close row-->
-        </div>
-        <!--close container-->
-        <div class="parallax1">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-4">
-                                <div class="box-img">
-                                    <img src="img/main/object.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="box-text">
-                                    <h2>WHAT I DO</h2>
-                                    <p>miniMe restore client-focused potentialities rather than functional strategic theme areas.
-                                        Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor.
-                                        Praesent sed nisi eleifend, lorem fermentum orci sit amet, iaculis libero.</p>
-                                    <p>miniMe restore client-focused potentialities rather than functional strategic theme areas.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="box-img">
-                                    <img src="img/main/object1.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- cd-section -->
 
-    <!--SECTION WORK-->
+    <div ng-view></div>
 
-    <section id="section2" class="cd-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-content">
-                        <h1> WORK </h1>
-
-                        <!-- Category Filter -->
-                        <dl class="group">
-                            <dd>
-                                <ul class="filter group albumFilter">
-                                    <li data-filter="*" class="cl-effect-11 current"><a data-hover="SHOWALL" href="#">SHOWALL</a></li>
-                                    <li class="cl-effect-11" data-filter=".cat1"><a data-hover="MARKETING" href="#">MARKETING</a></li>
-                                    <li class="cl-effect-11" data-filter=".cat2"><a data-hover="BRANDING" href="#">BRANDING</a></li>
-                                    <li class="cl-effect-11" data-filter=".cat3"><a data-hover="DESIGN" href="#">DESIGN</a></li>
-                                    <li class="cl-effect-11" data-filter=".cat4"><a data-hover="PHOTOGRAPHY" href="#">PHOTOGRAPHY</a></li>
-                                </ul>
-                            </dd>
-                        </dl>
-                        <div style="position: relative; overflow: hidden; height: 1089px;" class="portfolio albumContainer isotope">
-                            <div style="position: absolute; left: 0px; top: 0px; transform: translate(1px, 50px);" class="cat3 col-md-4 item isotope-item">
-                                <div class="grid">
-                                    <figure class="effect-oscar">
-                                        <img src="img/main/1.jpg" alt="">
-                                        <figcaption>
-                                            <p>Details images decent man. He used to clean porches with pleasure.</p>
-                                            <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/details.html" class="smooth-redirect"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div style="position: absolute; left: 0px; top: 0px; transform: translate(377px, 50px);" class="cat2 col-md-4 item isotope-item">
-                                <div class="grid">
-                                    <figure class="effect-oscar">
-                                        <a href=""><img src="img/main/2.jpg" alt=""></a>
-                                        <figcaption>
-                                            <p>Details video man. He used to clean porches with pleasure.</p>
-                                            <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/details_video.html" class="smooth-redirect"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div style="position: absolute; left: 0px; top: 0px; transform: translate(753px, 50px);" class="cat1 col-md-4 item isotope-item">
-                                <div class="grid">
-                                    <figure class="effect-oscar">
-                                        <a href=""><img src="img/main/3.jpg" alt=""></a>
-                                        <figcaption>
-                                            <p>Details images decent man. He used to clean porches with pleasure.</p>
-                                            <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/details.html" class="smooth-redirect"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div style="position: absolute; left: 0px; top: 0px; transform: translate(1px, 413px);" class="cat3 col-md-4 item isotope-item">
-                                <div class="grid">
-                                    <figure class="effect-oscar">
-                                        <a href=""><img src="img/main/4.jpg" alt=""></a>
-                                        <figcaption>
-                                            <p>Details video decent man. He used to clean porches with pleasure.</p>
-                                            <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/details_video.html" class="smooth-redirect"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div style="position: absolute; left: 0px; top: 0px; transform: translate(377px, 413px);" class="cat4 col-md-4 item isotope-item">
-                                <div class="grid">
-                                    <figure class="effect-oscar">
-                                        <a href=""><img src="img/main/5.jpg" alt=""></a>
-                                        <figcaption>
-                                            <p>Details images decent man. He used to clean porches with pleasure.</p>
-                                            <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/details.html" class="smooth-redirect"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div style="position: absolute; left: 0px; top: 0px; transform: translate(753px, 413px);" class="cat1 col-md-4 item isotope-item">
-                                <div class="grid">
-                                    <figure class="effect-oscar">
-                                        <a href=""><img src="img/main/6.jpg" alt=""></a>
-                                        <figcaption>
-                                            <p>Details video decent man. He used to clean porches with pleasure.</p>
-                                            <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/details_video.html" class="smooth-redirect"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div style="position: absolute; left: 0px; top: 0px; transform: translate(1px, 776px);" class="cat4 col-md-4 item isotope-item">
-                                <div class="grid">
-                                    <figure class="effect-oscar">
-                                        <a href=""><img src="img/main/7.jpg" alt=""></a>
-                                        <figcaption>
-                                            <p>Details images decent man. He used to clean porches with pleasure.</p>
-                                            <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/details.html" class="smooth-redirect"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div style="position: absolute; left: 0px; top: 0px; transform: translate(377px, 776px);" class="cat2 col-md-4 item isotope-item">
-                                <div class="grid">
-                                    <figure class="effect-oscar">
-                                        <a href=""><img src="img/main/8.jpg" alt=""></a>
-                                        <figcaption>
-                                            <p>Details video decent man. He used to clean porches with pleasure.</p>
-                                            <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/details_video.html" class="smooth-redirect"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div style="position: absolute; left: 0px; top: 0px; transform: translate(753px, 776px);" class="cat3 col-md-4 item isotope-item">
-                                <div class="grid">
-                                    <figure class="effect-oscar">
-                                        <a href=""><img src="img/main/9.jpg" alt=""></a>
-                                        <figcaption>
-                                            <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-                                            <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/details.html" class="smooth-redirect"></a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--close box content-->
-                </div>
-            </div>
-        </div>
-
-        <div class="parallax2">
-            <div class="overlay-white">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div style="opacity: 1; display: block;" id="owl-demo" class="owl-carousel owl-theme">
-
-                                <div class="owl-wrapper-outer">
-                                    <div style="width: 6840px; left: 0px; display: block;" class="owl-wrapper">
-                                        <div style="width: 1140px;" class="owl-item">
-                                            <div class="item">
-                                                <div class="carousel-desc">
-                                                    <span class=" icon-anchor"></span>
-                                                    <h1>What people say</h1>
-                                                    <p>Fusce risus metus, placerat in <span>consectetur</span> eu, porttitor
-                                                        a est sed sed dolor lorem cras adipiscing</p>
-                                                    <p>A small <span>creative</span> team, trying to enrich the lives of others</p>
-                                                    <p class="nm-name">- Brian Rood</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style="width: 1140px;" class="owl-item">
-                                            <div class="item">
-                                                <div class="carousel-desc">
-                                                    <span class=" icon-anchor"></span>
-                                                    <h1>What people say</h1>
-                                                    <p>Fusce risus metus, placerat in <span>consectetur</span> eu, porttitor
-                                                        a est sed sed dolor lorem cras adipiscing</p>
-                                                    <p>A small <span>creative</span> team, trying to enrich the lives of others</p>
-                                                    <p class="nm-name">- Miki Rood</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style="width: 1140px;" class="owl-item">
-                                            <div class="item">
-                                                <div class="carousel-desc">
-                                                    <span class=" icon-anchor"></span>
-                                                    <h1>What people say</h1>
-                                                    <p>Fusce risus metus, placerat in <span>consectetur</span> eu, porttitor
-                                                        a est sed sed dolor lorem cras adipiscing</p>
-                                                    <p>A small <span>creative</span> team, trying to enrich the lives of others</p>
-                                                    <p class="nm-name">- Robert Rood</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="owl-controls clickable">
-                                    <div class="owl-pagination">
-                                        <div class="owl-page active"><span class=""></span></div>
-                                        <div class="owl-page"><span class=""></span></div>
-                                        <div class="owl-page"><span class=""></span></div>
-                                    </div>
-                                    <div class="owl-buttons">
-                                        <div class="owl-prev"><i class="fa fa-angle-left"></i></div>
-                                        <div class="owl-next"><i class="fa fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- cd-section -->
-
-    <!--SECTION EXPERIENCES-->
-
-    <section id="section3" class="cd-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-content">
-                        <h1>Experiences</h1>
-                        <div class="col-md-6">
-                            <div class="box-text">
-                                <h2>WHAT I KNOW</h2>
-                                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Prae
-                                    sent non sem eu mi malesuada viverra volutpat ut libero. Nullam a venenatis tellus. Nam
-                                    fen convallis tristique. In imperdiet est sed aliquet imperdiet.
-                                </p>
-                                <p class="slogan">" Creativity requires the courage to let go of certainties "</p>
-                                <img class="signature" src="img/main/signature.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="skills-area triggerAnimation animated" data-animate="fadeInLeft">
-
-                                <div class="box-text">
-                                    <h2>MY Skills</h2>
-                                    <div class="skills-box">
-                                        <div class="skills-progress">
-                                            <p>Develope<span>87%</span></p>
-                                            <div class="meter nostrips develope">
-                                                <p style="width: 425px;"></p>
-                                            </div>
-                                            <p>Design<span>95%</span></p>
-                                            <div class="meter nostrips design">
-                                                <p style="width: 464px;"></p>
-                                            </div>
-                                            <p>Branding<span>98%</span></p>
-                                            <div class="meter nostrips branding">
-                                                <p style="width: 478px;"></p>
-                                            </div>
-                                            <p>Web applications<span>65%</span></p>
-                                            <div class="meter nostrips web-applications">
-                                                <p style="width: 317px;"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-content experiences">
-                        <div class="col-md-12 list-experiences">
-                            <h2><i class="fa fa-briefcase"></i>Front-End Developer<span class="data">2013 - 2015</span></h2>
-                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Prae sent
-                                non sem eu mi malesuada viverra volutpat ut libero. Nullam a venenatis tellus. Nam fen convallis
-                                tristique. In imperdiet est sed aliquet imperdiet. </p>
-                        </div>
-                        <div class="col-md-12 list-experiences">
-                            <h2><i class="fa fa-briefcase"></i>Web Developer<span class="data">2011 - 2013</span></h2>
-                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Prae sent
-                                non sem eu mi malesuada viverra volutpat ut libero. Nullam a venenatis tellus. Nam fen convallis
-                                tristique. In imperdiet est sed aliquet imperdiet. </p>
-                        </div>
-                        <div class="col-md-12 list-experiences">
-                            <h2><i class="fa fa-briefcase"></i>Software Developer<span class="data">2008 - 2010</span></h2>
-                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Prae sent
-                                non sem eu mi malesuada viverra volutpat ut libero. Nullam a venenatis tellus. Nam fen convallis
-                                tristique. In imperdiet est sed aliquet imperdiet. </p>
-                        </div>
-                        <div class="col-md-12 list-experiences">
-                            <h2><i class="fa fa-briefcase"></i>Software Developer<span class="data">2004 - 2008</span></h2>
-                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Prae sent
-                                non sem eu mi malesuada viverra volutpat ut libero. Nullam a venenatis tellus. Nam fen convallis
-                                tristique. In imperdiet est sed aliquet imperdiet. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- cd-section -->
-
-    <section id="section_blog" class="cd-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-content blog">
-                        <h1>Blog</h1>
-                        <div style="opacity: 1; display: block;" id="owl-demo-blog" class="owl-carousel owl-theme owl-details">
-                            <div class="owl-wrapper-outer">
-                                <div style="width: 3040px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);"
-                                    class="owl-wrapper">
-                                    <div style="width: 380px;" class="owl-item">
-                                        <div class="item">
-                                            <img src="img/main/5.jpg" alt="">
-                                            <p class="details-title">Martin J.
-                                                <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/blog.html" class="itemPreview smooth-redirect"></a>
-                                            </p>
-                                            <p class="blog-desc">
-                                                Appropriately work prospective meta-services and client-centered relationships. Global miniMe html plus angularjs for .....
-                                            </p>
-                                            <p class="date-blog">September 14, 2014 / Design</p>
-                                        </div>
-                                    </div>
-                                    <div style="width: 380px;" class="owl-item">
-                                        <div class="item">
-                                            <img src="img/main/6.jpg" alt="">
-                                            <p class="details-title">App Design
-                                                <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/blog.html" class="itemPreview smooth-redirect"></a>
-                                            </p>
-                                            <p class="blog-desc">
-                                                Appropriately work prospective meta-services and client-centered relationships. Global miniMe html plus angularjs for .....
-                                            </p>
-                                            <p class="date-blog">September 14, 2014 / Design</p>
-                                        </div>
-                                    </div>
-                                    <div style="width: 380px;" class="owl-item">
-                                        <div class="item">
-                                            <img src="img/main/7.jpg" alt="">
-                                            <p class="details-title">Phone App
-                                                <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/blog.html" class="itemPreview smooth-redirect"></a>
-                                            </p>
-                                            <p class="blog-desc">
-                                                Appropriately work prospective meta-services and client-centered relationships. Global miniMe html plus angularjs for .....
-                                            </p>
-                                            <p class="date-blog">September 14, 2014 / Design</p>
-                                        </div>
-                                    </div>
-                                    <div style="width: 380px;" class="owl-item">
-                                        <div class="item">
-                                            <img src="img/main/8.jpg" alt="">
-                                            <p class="details-title">Gravity
-                                                <a href="http://www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/minime/html/blog.html" class="itemPreview smooth-redirect"></a>
-                                            </p>
-                                            <p class="blog-desc">
-                                                Appropriately work prospective meta-services and client-centered relationships. Global miniMe html plus angularjs for .....
-                                            </p>
-                                            <p class="date-blog">September 14, 2014 / Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="owl-controls clickable">
-                                <div class="owl-pagination">
-                                    <div class="owl-page active"><span class=""></span></div>
-                                    <div class="owl-page"><span class=""></span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- cd-section -->
-
-    <section id="section4" class="cd-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Contact</h1>
-                    <div class="box-content contact">
-                        <div class="col-md-4 c-info">
-                            <p><i class="fa fa-phone"></i>+41 345 376 284</p>
-                        </div>
-                        <div class="col-md-4 c-info">
-                            <p><i class="fa fa fa-map-marker"></i>245 Road Broke Blvd, Ste K</p>
-                        </div>
-                        <div class="col-md-4 c-info">
-                            <p><i class="fa fa-envelope-o"></i>info@minime.com</p>
-                        </div>
-                        <form id="contact_form" class="form email-form" method="post" action="" autocomplete="off">
-                            <div class="col-md-6">
-                                <input name="subject" id="subject" class="input-contact" placeholder="Subject" type="text">
-                                <input name="name" id="name" class="input-contact" placeholder="Name" type="text">
-                                <input name="email" class="input-contact" id="email" placeholder="E-mail" type="email">
-
-                            </div>
-                            <div class="col-md-6">
-                                <textarea type="text" name="message" id="message" class="input-contact" placeholder="Message" cols="30" rows="7"></textarea>
-                                <button type="submit" class="btn submit-contact"><i class="fa fa-envelope-o"></i>SUBMIT</button>
-                                <p class="success">Your message has been sent successfully.</p>
-                                <p class="error">E-mail must be valid and message must be longer than 20 characters.</p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- cd-section -->
-
-
-
-    <section id="section6" class="cd-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <footer class="box-content">
-                        <div class="footer-logo"><img src="img/main/logo_preload.png" alt=""></div>
-                        <div class="footer-social">
-                            <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
-                            <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </footer>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="js/jquery.js"></script>    
+    <script src="js/jquery.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.js"></script>
     <script src="js/angular-sanitize.min.js"></script>
     <script src="script.js"></script>
-        
     <script src="js/jquery_002.js" type="text/javascript"></script>
     <script src="js/jquery_003.js" type="text/javascript"></script>
-    <script src="js/isotope.js" type="text/javascript"></script>   
+    <script src="js/isotope.js" type="text/javascript"></script>
     <script src="js/owl.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-    
-    
+    <script src="js/app/route/mainroute.js" type="text/javascript"></script>
+    <script src="js/app/service/dataService.js" type="text/javascript"></script>
     <!-- Resource jQuery -->
 
 

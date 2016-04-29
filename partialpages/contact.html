@@ -1,0 +1,51 @@
+<section id="contact" class="cd-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Contact</h1>
+                <div class="box-content contact">
+                    <div class="col-md-4 c-info">
+                        <p><i class="fa fa-phone"></i>+41 345 376 284</p>
+                    </div>
+                    <div class="col-md-4 c-info">
+                        <p><i class="fa fa fa-map-marker"></i>245 Road Broke Blvd, Ste K</p>
+                    </div>
+                    <div class="col-md-4 c-info">
+                        <p><i class="fa fa-envelope-o"></i>info@minime.com</p>
+                    </div>
+                    <form id="contact_form" class="form email-form" method="post" action="" autocomplete="off">
+                        <div class="col-md-6">
+                            <input name="subject" id="subject" class="input-contact" placeholder="Subject" type="text">
+                            <input name="name" id="name" class="input-contact" placeholder="Name" type="text">
+                            <input name="email" class="input-contact" id="email" placeholder="E-mail" type="email">
+
+                        </div>
+                        <div class="col-md-6">
+                            <textarea type="text" name="message" id="message" class="input-contact" placeholder="Message" cols="30" rows="7"></textarea>
+                            <button type="submit" class="btn submit-contact"><i class="fa fa-envelope-o"></i>SUBMIT</button>
+                            <p class="success">Your message has been sent successfully.</p>
+                            <p class="error">E-mail must be valid and message must be longer than 20 characters.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cd-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <footer class="box-content">
+                    <div class="footer-logo"><img src="img/.png" alt=""></div>
+                    <div class="footer-social">
+                        <a href="#" title="Facebook" target="_blank" ng-repeat="item in contacts">
+
+                            <i class="fa fa-{{item.name}} fa-fw"></i></a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</section>
