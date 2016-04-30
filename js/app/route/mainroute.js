@@ -58,14 +58,16 @@ uraApp.config(function ($routeProvider) {
 uraApp.controller('mainController', function ($scope, $sce) {
     // create a message to display in our view
     $scope.data = getAboutMe($sce);
+    
 });
 
 uraApp.controller('aboutController', function ($scope) {
     $scope.message = 'Look! I am an about page.';
 });
 
-uraApp.controller('contactController', function ($scope) {
-    $scope.contacts = getSocialNetworksData();
+uraApp.controller('contactController', function ($scope, $sce) {
+   
+    $scope.data = getAboutMe($sce);
 });
 uraApp.controller('educationController', function ($scope) {
     $scope.educations = getEducationData();
@@ -73,7 +75,11 @@ uraApp.controller('educationController', function ($scope) {
 uraApp.controller('experienceController', function ($scope) {
     $scope.experiences = getexperienceData();
 });
- 
+uraApp.controller('socialNetworksController', function ($scope, $sce) {
+    // create a message to display in our view
+    $scope.data = getAboutMe($sce);
+   $scope.socialnetworks = getSocialNetworksData();
+});
 uraApp.run(['$rootScope', function ($rootScope) {
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
         $rootScope.title = current.$$route.title;

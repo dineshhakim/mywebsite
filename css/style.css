@@ -201,10 +201,10 @@ header nav .menu li a{
 .box-content {
 	width: 100%;
 	float: left;
-	padding: 100px 0 100px 0;
+	padding: 100px 0 50px 0;
 }
 .box-content.about {
-	padding: 200px 0 100px 0;
+	padding: 150px 0 50px 0;
 }
 .box-text {
 	border: 1px solid #dbdbdb;
@@ -1101,13 +1101,17 @@ ul.other-list li:hover span{
 }
 
 /***FOOTER****/
-
+.footer-social
+{
+    margin-right: 30px;
+}
 .footer-social a {
+    
 	width: 25px;
     height: 25px;
     line-height: 25px !important;
     position: relative;
-    margin: 0 6px;
+    margin: 5px 10px 0 5px;
     text-align: center;
     display: inline-block;
     color: #111;
@@ -1115,24 +1119,24 @@ ul.other-list li:hover span{
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    -webkit-transform: rotate(45deg);
+    /*-webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);*/
+    /*transform: rotate(45deg);*/
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
-.footer-social a i {
+/*.footer-social a i {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
-}
+}*/
 footer .footer-social a:hover{
     color: #fff;
 }
@@ -1265,15 +1269,15 @@ footer .footer-social a:hover{
             font-size: 10px
         }
         
-        
+        /*Logo Css  Start*/
           .logo {
             background: #184668;
             position: relative;
-            padding: 4em 4em 0 7em;
+            padding: 4em 4em 0 4em;
             font-size: 5px;
             float: left;
             overflow: hidden;
-            height: 16.5em;
+            height: 19.5em;
         }
         
         .logo .symbol {
@@ -1329,6 +1333,8 @@ footer .footer-social a:hover{
             -webkit-transition: .5s;
             transition: .5s;
         }
+        
+         /*Logo Css  End*/
           @media print {
             .gm-style .gmnoprint,
             .gmnoprint {
